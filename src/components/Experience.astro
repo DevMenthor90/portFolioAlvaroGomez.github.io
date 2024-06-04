@@ -1,0 +1,36 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+    {
+        date: "Septiembre 2019 - ACTUALIDAD",
+        title: "Coordinador de Desarrollo - DIGITALWARE",
+        description:
+            "Dirigir el diseño, desarrollo e implementación de proyectos de software, asegurando la entrega a tiempo y con alta calidad.Supervisar y mentorizar a desarrolladores junior y semi senior, proporcionando orientación técnica y apoyo en sus tareas diarias.Definir y establecer la arquitectura de software, asegurando que cumpla con los requisitos técnicos y de negocio. ",
+        link:'https://www.digitalware.com.co/'
+    },
+    {
+        date: "Abril 2018 - Septiembre 2019",
+        title: "Desarrollador - SISTRAN",
+        description:
+            "Diseñar, desarrollar y mantener aplicaciones web utilizando, identifica áreas de mejora en las aplicaciones existentes y proponer soluciones innovadoras.",
+        link:'https://www.sistran.com/latam/es/inicio/'
+    },
+    {
+        date: "Agosto 2015 - Abril 2018",
+        title: "Desarrollador - ASESORIAS PUBLICAS Y EMPRESARIALES",
+        description:
+            "Colaborar en el diseño, desarrollo y mantenimiento de aplicaciones web.    Participar en el proceso de pruebas y depuración de aplicaciones para asegurar su calidad y rendimiento.",
+    },
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+    {
+        EXPERIENCE.map((experience) => (
+            <li class="mb-10 ms-4">
+                <ExperienceItem {...experience} />
+            </li>
+        ))
+    }
+</ol>

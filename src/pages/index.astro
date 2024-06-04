@@ -1,0 +1,65 @@
+---
+import Badge from "../components/Badge.astro";
+import Layout from "../layouts/Layout.astro";
+import Linkedin from "../icons/Linkedin.astro";
+import SocialPill from "../icons/SocialPill.astro";
+import Email from "../icons/Email.astro";
+import Experience from "../components/Experience.astro";
+import Footer from "../components/Footer.astro";
+import Technologies from "../components/Technologies.astro";
+---
+
+<Layout title="Portfolio de Alvaro Gomez - Desarrollador y Programador Web.">
+	<main class="px-4">
+		<section id="top" class="w-full lg:w-[740px] mx-auto mt-32 mb-20">
+			<h1
+				class="text-white text-4xl font-bold flex flex-row gap-x-4 pb-4"
+			>
+				Hey, soy Alvaro Gómez
+				<a
+					href="https://www.linkedin.com/in/alvarojgg"
+					target="_blank"
+					rel="noopener"
+					class="flex justify-center items-center"
+				>
+					<Badge>Displonible para trabajar.</Badge>
+				</a>
+			</h1>
+			<h2 class="opacity-80 text-xl">
+				<span>+8 años de experiencia. </span>
+				<span class="text-yellow-200/90"> Líder de Desarrollo,</span>
+				<span class="text-green-200/90"> Scrum Master e</span>
+				<span class="text-red-200/90">
+					Ingeniero en Sistemas y Computación.</span
+				>
+				<span class="opacity-85">
+					Especializado en crear aplicaciones únicas.</span
+				>
+			</h2>
+			<nav class="flex gap-x-2 mt-8">
+				<SocialPill href="https://www.linkedin.com/in/alvarojgg">
+					<Linkedin class="size-6" />LinkedIn
+				</SocialPill>
+				<SocialPill href="mailto:j_alvarogomez@hotmail.com">
+					<Email class="size-6" />j_alvarogomez@hotmail.com
+				</SocialPill>
+			</nav>
+		</section>
+		<section id="experiencia" class="w-full lg:w-[740px] mx-auto mt-12">
+			<h2 class="text-4xl font-semibold">Experiencia Laboral</h2>
+			<span class="flex mt-10">
+				<Experience />
+			</span>
+		</section>
+		<section
+			id="tech"
+			class="justify-center py-7 w-full lg:w-[740px] mx-auto mt-12"
+		>
+			<h2 class="text-4xl font-semibold">Tecnologías</h2>
+			<span class="flex mt-10">
+				<Technologies />
+			</span>
+		</section>
+		<Footer />
+	</main>
+</Layout>
